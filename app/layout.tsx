@@ -12,9 +12,10 @@ const _ibmPlexMono = V0_Font_IBM_Plex_Mono({ subsets: ['latin'], weight: ["100",
 const _lora = V0_Font_Lora({ subsets: ['latin'], weight: ["400","500","600","700"] })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'Pragmatic — Structural Steel Detailing & BIM Services',
+  description:
+    'Pragmatic delivers precision structural steel detailing, fabrication coordination, and advanced BIM services using industry-standard tools and modern workflows.',
+  generator: 'Next.js',
 }
 
 export default function RootLayout({
