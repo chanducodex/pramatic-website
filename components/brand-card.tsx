@@ -14,7 +14,7 @@ export function BrandCard({ title, icon, className, children }: BrandCardProps) 
       className={cn(
         "group relative overflow-hidden rounded-xl border bg-white/60 backdrop-blur",
         "border-violet-200 shadow-sm hover:shadow-lg transition-transform duration-300",
-        "hover:-translate-y-1",
+        "hover:-translate-y-1 h-full flex flex-col",
         className,
       )}
     >
@@ -27,7 +27,7 @@ export function BrandCard({ title, icon, className, children }: BrandCardProps) 
         </div>
         <h3 className="text-base md:text-lg font-semibold text-slate-900 text-pretty">{title}</h3>
       </header>
-      {children ? <div className="px-5 pb-5 text-slate-600 leading-relaxed">{children}</div> : null}
+      {children ? <div className="px-5 pb-5 text-slate-600 leading-relaxed flex-1 flex items-start">{children}</div> : null}
     </article>
   )
 }

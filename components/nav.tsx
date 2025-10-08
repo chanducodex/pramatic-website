@@ -17,7 +17,7 @@ export default function Nav() {
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <img src="/images/logo.png" alt="Pragmatic Technical Services logo" className="h-8 w-auto" />
+          <img src="https://pragmatich.com/wp-content/uploads/thegem-logos/logo_49cfe6bdf8083bda4be42893ccc10a72_2x.png" alt="Pragmatic Technical Services logo" className="h-8 w-auto" />
           <span className="sr-only">Pragmatic Technical Services</span>
         </Link>
         <ul className="hidden md:flex items-center gap-6 text-sm text-slate-700">
