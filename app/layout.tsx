@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import './globals.css'
 
 import { Plus_Jakarta_Sans as V0_Font_Plus_Jakarta_Sans, IBM_Plex_Mono as V0_Font_IBM_Plex_Mono, Lora as V0_Font_Lora } from 'next/font/google'
@@ -28,6 +29,19 @@ export default function RootLayout({
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
         <Analytics />
+
+        {/* Chatling AI chatbot configuration and loader */}
+        <Script
+          id="chtl-config"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: `window.chtlConfig = { chatbotId: "9418221527" }` }}
+        />
+        <Script
+          id="chtl-script"
+          strategy="afterInteractive"
+          src="https://chatling.ai/js/embed.js"
+          data-id="9418221527"
+        />
       </body>
     </html>
   )
